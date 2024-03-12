@@ -26,14 +26,63 @@ Public Class Agent
     End Sub
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
 
-        If txtEmployeeName.Text = "" OrElse txtEmployeeAge.Text = "" OrElse txtEmployeeID.Text = "" OrElse txtEmployeeSalary.Text = "" OrElse txtPhoneNumber.Text = "" OrElse txtPassword.Text = "" Then
-            MsgBox("Please fill in all required fields.")
-            Return
-        End If
+        Try
+            If txtEmployeeName.Text = "" OrElse txtEmployeeAge.Text = "" OrElse txtEmployeeID.Text = "" OrElse txtEmployeeSalary.Text = "" OrElse txtPhoneNumber.Text = "" OrElse txtPassword.Text = "" Then
+                MsgBox("Please fill in all required fields.")
+                Return
+            End If
+
+            Con.Open()
+            Dim sqlQuery As String = "INSERT INTO EmployeeTbl (EmpID, EmpName, EmpSalary, EmpAge, EmpPhone, EmpPassword) VALUES (@EmpID, @EmpName, @EmpSalary, @EmpAge, @EmpPhone, @EmpPassword)"
+            Dim cmd As New SqlCommand(sqlQuery, Con)
+            cmd.Parameters.AddWithValue("@EmpID", txtEmployeeID.Text)
+            cmd.Parameters.AddWithValue("@EmpName", txtEmployeeName.Text)
+            cmd.Parameters.AddWithValue("@EmpSalary", txtEmployeeSalary.Text)
+            cmd.Parameters.AddWithValue("@EmpAge", txtEmployeeAge.Text)
+            cmd.Parameters.AddWithValue("@EmpPhone", txtPhoneNumber.Text)
+            cmd.Parameters.AddWithValue("@EmpPassword", txtPassword.Text)
+
+            cmd.ExecuteNonQuery()
+            MsgBox("Employee added successfully")
+            Con.Close()
+            Populate()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
 
     End Sub
 
     Private Sub Agent_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Populate()
+    End Sub
+
+    Private Sub EditBtn_Click(sender As Object, e As EventArgs) Handles EditBtn.Click
+        Try
+            If txtEmployeeName.Text = "" OrElse txtEmployeeAge.Text = "" OrElse txtEmployeeID.Text = "" OrElse txtEmployeeSalary.Text = "" OrElse txtPhoneNumber.Text = "" OrElse txtPassword.Text = "" Then
+                MsgBox("Please fill in all required fields.")
+                Return
+            End If
+
+            Con.Open()
+            Dim sqlQuery As String = "UPDATE EmployeeTbl SET EmpID = @EmpID, EmpName = @EmpName, EmpSalary = @EmpSalary, EmpAge = @EmpAge, EmpPhone = @EmpPhone, EmpPassword = @EmpPassword"
+            Dim cmd As New SqlCommand(sqlQuery, Con)
+            cmd.Parameters.AddWithValue("@EmpID", txtEmployeeID.Text)
+            cmd.Parameters.AddWithValue("@EmpName", txtEmployeeName.Text)
+            cmd.Parameters.AddWithValue("@EmpSalary", txtEmployeeSalary.Text)
+            cmd.Parameters.AddWithValue("@EmpAge", txtEmployeeAge.Text)
+            cmd.Parameters.AddWithValue("@EmpPhone", txtPhoneNumber.Text)
+            cmd.Parameters.AddWithValue("@EmpPassword", txtPassword.Text)
+
+            cmd.ExecuteNonQuery()
+            MsgBox("Employee added successfully")
+            Con.Close()
+            Populate()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub Guna2PictureBox5_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox5.Click
+        BackMod.LogOff(Me)
     End Sub
 End Class
