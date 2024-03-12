@@ -56,13 +56,13 @@ Partial Class Agent
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(824, 100)
+        Me.Panel1.Size = New System.Drawing.Size(834, 100)
         Me.Panel1.TabIndex = 3
         '
         'Guna2PictureBox5
         '
         Me.Guna2PictureBox5.Image = Global.Pharma_Management.My.Resources.Resources.logoff_removebg_preview
-        Me.Guna2PictureBox5.Location = New System.Drawing.Point(732, 12)
+        Me.Guna2PictureBox5.Location = New System.Drawing.Point(766, 9)
         Me.Guna2PictureBox5.Name = "Guna2PictureBox5"
         Me.Guna2PictureBox5.ShadowDecoration.Parent = Me.Guna2PictureBox5
         Me.Guna2PictureBox5.Size = New System.Drawing.Size(56, 28)
@@ -74,7 +74,7 @@ Partial Class Agent
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(346, 54)
+        Me.Label2.Location = New System.Drawing.Point(375, 54)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(62, 25)
         Me.Label2.TabIndex = 2
@@ -84,7 +84,7 @@ Partial Class Agent
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(298, 9)
+        Me.Label1.Location = New System.Drawing.Point(307, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(215, 45)
         Me.Label1.TabIndex = 1
@@ -96,7 +96,7 @@ Partial Class Agent
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel2.Location = New System.Drawing.Point(0, 518)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(824, 10)
+        Me.Panel2.Size = New System.Drawing.Size(834, 10)
         Me.Panel2.TabIndex = 36
         '
         'btnBack
@@ -167,7 +167,7 @@ Partial Class Agent
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(474, 106)
+        Me.Label3.Location = New System.Drawing.Point(488, 106)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(95, 25)
         Me.Label3.TabIndex = 31
@@ -205,7 +205,7 @@ Partial Class Agent
         Me.dtgAgent.Name = "dtgAgent"
         Me.dtgAgent.RowHeadersVisible = False
         Me.dtgAgent.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dtgAgent.Size = New System.Drawing.Size(524, 358)
+        Me.dtgAgent.Size = New System.Drawing.Size(558, 358)
         Me.dtgAgent.TabIndex = 30
         Me.dtgAgent.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
         Me.dtgAgent.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
@@ -378,7 +378,7 @@ Partial Class Agent
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(824, 528)
+        Me.ClientSize = New System.Drawing.Size(834, 528)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.txtPhoneNumber)
         Me.Controls.Add(Me.Panel2)
