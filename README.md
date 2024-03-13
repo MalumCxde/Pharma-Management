@@ -1,4 +1,4 @@
-# Pharmacy Management System
+# Pharmacy Management System 🏥💊
 
 ## Overview
 
@@ -13,10 +13,10 @@ Pharmacy Management System is a software application developed to manage the ope
 
 ## Technologies Used
 
-- **Programming Language**: Visual Basic .NET (VB.NET)
-- **Database**: Microsoft SQL Server
-- **User Interface**: Windows Forms (WinForms)
-- **Charting Library**: Microsoft Chart Controls for .NET Framework
+- **Programming Language**: Visual Basic .NET (VB.NET) 🖥️
+- **Database**: Microsoft SQL Server 🛢️
+- **User Interface**: Windows Forms (WinForms) 🖼️
+- **Charting Library**: Microsoft Chart Controls for .NET Framework 📊
 
 ## Installation
 
@@ -34,11 +34,10 @@ Pharmacy Management System is a software application developed to manage the ope
 3. Add, edit, or delete data as needed in each module.
 4. Use the analytics section to visualize data trends.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgements
 
 - Microsoft Docs - For providing comprehensive documentation on Visual Basic .NET and WinForms.
 - Stack Overflow - For the countless solutions and insights shared by the developer community.
+
+
+
