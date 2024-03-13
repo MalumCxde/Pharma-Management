@@ -190,7 +190,7 @@ Partial Class Agent
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dtgAgent.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.dtgAgent.ColumnHeadersHeight = 4
+        Me.dtgAgent.ColumnHeadersHeight = 30
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
@@ -220,7 +220,7 @@ Partial Class Agent
         Me.dtgAgent.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
         Me.dtgAgent.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
         Me.dtgAgent.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.dtgAgent.ThemeStyle.HeaderStyle.Height = 4
+        Me.dtgAgent.ThemeStyle.HeaderStyle.Height = 30
         Me.dtgAgent.ThemeStyle.ReadOnly = False
         Me.dtgAgent.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
         Me.dtgAgent.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal

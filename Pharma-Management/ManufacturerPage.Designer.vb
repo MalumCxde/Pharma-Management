@@ -26,6 +26,7 @@ Partial Class ManufacturerPage
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Guna2PictureBox5 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnBack = New Guna.UI2.WinForms.Guna2Button()
@@ -39,10 +40,9 @@ Partial Class ManufacturerPage
         Me.txtCompanyName = New Guna.UI2.WinForms.Guna2TextBox()
         Me.txtConpanyID = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Guna2PictureBox5 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Panel1.SuspendLayout()
-        CType(Me.dtgManufacturer, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtgManufacturer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -54,14 +54,25 @@ Partial Class ManufacturerPage
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(803, 100)
+        Me.Panel1.Size = New System.Drawing.Size(868, 100)
         Me.Panel1.TabIndex = 2
+        '
+        'Guna2PictureBox5
+        '
+        Me.Guna2PictureBox5.Image = Global.Pharma_Management.My.Resources.Resources.logoff_removebg_preview
+        Me.Guna2PictureBox5.Location = New System.Drawing.Point(800, 9)
+        Me.Guna2PictureBox5.Name = "Guna2PictureBox5"
+        Me.Guna2PictureBox5.ShadowDecoration.Parent = Me.Guna2PictureBox5
+        Me.Guna2PictureBox5.Size = New System.Drawing.Size(56, 28)
+        Me.Guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Guna2PictureBox5.TabIndex = 11
+        Me.Guna2PictureBox5.TabStop = False
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(346, 54)
+        Me.Label2.Location = New System.Drawing.Point(380, 54)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(127, 25)
         Me.Label2.TabIndex = 2
@@ -71,7 +82,7 @@ Partial Class ManufacturerPage
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(298, 9)
+        Me.Label1.Location = New System.Drawing.Point(335, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(215, 45)
         Me.Label1.TabIndex = 1
@@ -168,7 +179,7 @@ Partial Class ManufacturerPage
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dtgManufacturer.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.dtgManufacturer.ColumnHeadersHeight = 4
+        Me.dtgManufacturer.ColumnHeadersHeight = 30
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
@@ -183,7 +194,7 @@ Partial Class ManufacturerPage
         Me.dtgManufacturer.Name = "dtgManufacturer"
         Me.dtgManufacturer.RowHeadersVisible = False
         Me.dtgManufacturer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dtgManufacturer.Size = New System.Drawing.Size(514, 338)
+        Me.dtgManufacturer.Size = New System.Drawing.Size(582, 338)
         Me.dtgManufacturer.TabIndex = 19
         Me.dtgManufacturer.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
         Me.dtgManufacturer.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
@@ -198,7 +209,7 @@ Partial Class ManufacturerPage
         Me.dtgManufacturer.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
         Me.dtgManufacturer.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
         Me.dtgManufacturer.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.dtgManufacturer.ThemeStyle.HeaderStyle.Height = 4
+        Me.dtgManufacturer.ThemeStyle.HeaderStyle.Height = 30
         Me.dtgManufacturer.ThemeStyle.ReadOnly = False
         Me.dtgManufacturer.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
         Me.dtgManufacturer.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
@@ -308,27 +319,16 @@ Partial Class ManufacturerPage
         '
         Me.Panel2.BackColor = System.Drawing.Color.Teal
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel2.Location = New System.Drawing.Point(0, 497)
+        Me.Panel2.Location = New System.Drawing.Point(0, 498)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(803, 10)
+        Me.Panel2.Size = New System.Drawing.Size(868, 10)
         Me.Panel2.TabIndex = 25
-        '
-        'Guna2PictureBox5
-        '
-        Me.Guna2PictureBox5.Image = Global.Pharma_Management.My.Resources.Resources.logoff_removebg_preview
-        Me.Guna2PictureBox5.Location = New System.Drawing.Point(732, 12)
-        Me.Guna2PictureBox5.Name = "Guna2PictureBox5"
-        Me.Guna2PictureBox5.ShadowDecoration.Parent = Me.Guna2PictureBox5
-        Me.Guna2PictureBox5.Size = New System.Drawing.Size(56, 28)
-        Me.Guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.Guna2PictureBox5.TabIndex = 11
-        Me.Guna2PictureBox5.TabStop = False
         '
         'ManufacturerPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(803, 507)
+        Me.ClientSize = New System.Drawing.Size(868, 508)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnDelete)
@@ -347,8 +347,8 @@ Partial Class ManufacturerPage
         Me.Text = "ManufacturerPage"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.dtgManufacturer, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtgManufacturer, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
