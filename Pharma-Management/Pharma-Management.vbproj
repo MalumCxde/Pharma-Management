@@ -191,8 +191,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="PharmacyManagementSystem.Designer.readme" />
-    <None Include="PharmacyManagementSystem.readme">
+    <None Include="PharmacyManagementSystem.Designer.md" />
+    <None Include="PharmacyManagementSystem.md">
       <SubType>Form</SubType>
     </None>
     <None Include="Resources\pill-removebg-preview.png" />
